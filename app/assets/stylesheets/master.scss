@@ -44,6 +44,9 @@ header {
 }
 hr {
   clear:both;
+  height: 3px;
+  border: none;
+  background-color: #222222;
 }
 h1 {
   font-family: 'Overpass', sans-serif;
@@ -54,8 +57,17 @@ h2 {
   font-style: italic;
  
 }
-
-
+.next-quote {
+  color: #f84342;
+  font-family: 'Overpass', sans-serif;
+  font-size: 20px;
+}
+.footer-blurb {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  font-align: right;
+  font-sie: 10px;
+}
 
 
 
