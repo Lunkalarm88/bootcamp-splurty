@@ -27,11 +27,38 @@
         Splurting out random tech week sayings since 2019
       </div>
       <div class="links">
-        <%= link_to 'Contribute', new_quote_path %>
+        <!-- Button trigger modal -->
+        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
         <%= link_to 'About', about_path %>
       </div>
-      
     </header>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Enter your Tech Week Saying here</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <%= simple_form_for Quote.new do |f| %>
+        <div class="modal-body">
+          <%= f.input :saying %>
+          <%= f.input :author %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit 'Submit', class: 'btn btn-danger' %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
 
     <hr />
 
