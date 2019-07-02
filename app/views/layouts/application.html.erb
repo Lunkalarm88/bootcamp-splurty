@@ -73,13 +73,14 @@
     <% end %>
     <%= yield %>
   </div>
+    <div class="col-12 offset-2 col-sm-6 new-quote">
+      <%= link_to "That was funny! Show me another.", root_path, class: 'next-quote' %>
+    </div>
 
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6">
-          <%= link_to "That was funny! Show me another.", root_path, class: 'next-quote' %>
-        </div>
+        
         <div class="col-12 col-sm-6 footer-blurb">
           Proudly hacked by <a href="https://nicholaskuhn.netlify.com/">Nick Kuhn</a><br />
           Want to build your own Splurty Web App? - <a href="https://online.bootcampspot.com">Learn to code here</a>
